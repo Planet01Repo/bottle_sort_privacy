@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Color Bottle Sort</title>
+    <!-- Google Fonts for Modern Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-color: #090A0F;
+            --card-bg: rgba(20, 23, 36, 0.65);
+            --border-color: rgba(0, 255, 255, 0.2);
+            --accent-cyan: #00FFFF;
+            --accent-green: #39FF14;
+            --accent-gold: #FFD700;
+            --text-primary: #FFFFFF;
+            --text-secondary: rgba(255, 255, 255, 0.7);
+            --text-muted: rgba(255, 255, 255, 0.45);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 40px 20px;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(0, 255, 255, 0.05) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(57, 255, 20, 0.04) 0%, transparent 40%);
+            background-attachment: fixed;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .logo-area {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 15px;
+        }
+
+        .logo-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-green));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+            font-weight: bold;
+            font-family: 'Orbitron', sans-serif;
+            color: #090A0F;
+            font-size: 24px;
+        }
+
+        h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2.2rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            background: linear-gradient(to right, #FFF, var(--accent-cyan), var(--accent-green));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 8px;
+            text-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            font-weight: 400;
+        }
+
+        .last-updated {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-top: 10px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 24px;
+            padding: 40px;
+            backdrop-filter: blur(12px);
+            box-shadow: 
+                0 15px 35px rgba(0, 0, 0, 0.5),
+                0 0 20px rgba(0, 255, 255, 0.05);
+        }
+
+        h2 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.3rem;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: var(--accent-cyan);
+            letter-spacing: 1px;
+            border-left: 3px solid var(--accent-green);
+            padding-left: 12px;
+            display: flex;
+            align-items: center;
+        }
+
+        h2:first-of-type {
+            margin-top: 0;
+        }
+
+        p {
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+            font-size: 1.05rem;
+            font-weight: 300;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+            color: var(--text-secondary);
+        }
+
+        li {
+            margin-bottom: 8px;
+            font-size: 1.02rem;
+            font-weight: 300;
+        }
+
+        li strong {
+            color: var(--text-primary);
+        }
+
+        .highlight-box {
+            background: rgba(57, 255, 20, 0.05);
+            border: 1px solid rgba(57, 255, 20, 0.2);
+            border-radius: 12px;
+            padding: 20px;
+            margin: 25px 0;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0;
+            color: var(--text-primary);
+            font-weight: 400;
+        }
+
+        a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        a:hover {
+            color: var(--accent-green);
+            text-decoration: underline;
+            text-shadow: 0 0 8px rgba(57, 255, 20, 0.5);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px 0;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 20px 10px;
+            }
+            .card {
+                padding: 24px 16px;
+                border-radius: 16px;
+            }
+            h1 {
+                font-size: 1.7rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="logo-area">
+            <div class="logo-icon">🧪</div>
+        </div>
+        <h1>Color Bottle Sort</h1>
+        <div class="subtitle">Privacy Policy</div>
+        <div class="last-updated">Last Updated: June 08, 2026</div>
+    </header>
+
+    <div class="card">
+        <h2>1. Introduction</h2>
+        <p>This privacy policy governs your use of the software application <strong>Color Bottle Sort</strong> (referred to as the "Game" or "App") for mobile devices, created by <strong>Mubashir Developers</strong> (referred to as "we", "us", or "our").</p>
+        <p>We are committed to developing fun, high-quality games and protecting the privacy of our players. This Privacy Policy details what information we collect, how it is used, and the choices available to you regarding your data.</p>
+
+        <h2>2. Information Collection and Use</h2>
+        <p>Our primary goal is to provide a seamless, enjoyable offline gameplay experience. We do not require you to register an account, log in, or provide any personal identification info to play the game.</p>
+        
+        <div class="highlight-box">
+            <p><strong>🔒 Pure Local Storage:</strong> All game progress, high scores, coins, unlocked skins, and settings are saved locally on your device (using secure shared preferences). We do not upload, sync, or store this data on our servers.</p>
+        </div>
+
+        <h2>3. Third-Party Services</h2>
+        <p>To support game distribution and display advertisements, the Game may utilize third-party SDKs that collect anonymous or pseudonymous device details. These third-party services include:</p>
+        <ul>
+            <li><strong>Google Play Services:</strong> Used to facilitate game updates and distributions. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></li>
+            <li><strong>Google AdMob (If Applicable):</strong> Used to deliver non-personalized or personalized advertising tailored to your interests. <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener noreferrer">Google AdMob Privacy Policy</a></li>
+        </ul>
+        <p>These third-party providers may collect details such as your device's advertising identifier (IDFA/GAID), IP address, and general location information to serve advertisements and analyze app metrics.</p>
+
+        <h2>4. Children's Privacy</h2>
+        <p>Our Game is designed for general audiences and does not knowingly collect personal data from children under the age of 13. If you are a parent or guardian and become aware that your child has provided personal information to a third party through our App, please contact us so we can investigate and address it.</p>
+
+        <h2>5. Data Security</h2>
+        <p>Since the App does not store user information on external servers, your data security rests on your device's security. We recommend keeping your device operating system up to date and secured with passcode/biometric options.</p>
+
+        <h2>6. Changes to This Privacy Policy</h2>
+        <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page. You are advised to review this Privacy Policy periodically for any changes.</p>
+
+        <h2>7. Contact Us</h2>
+        <p>If you have any questions or suggestions regarding this Privacy Policy, please feel free to reach out to us:</p>
+        <p>📩 Email: <a href="mailto:dev@planet01.net">dev@planet01.net</a></p>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Planet01. All rights reserved.</p>
+    </footer>
+</div>
+
+</body>
+</html>
